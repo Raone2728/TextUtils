@@ -29,7 +29,7 @@ function Textfrom(props){
     const handleCopy=()=>{
           const box=document.getElementById("mybox");
           box.select();
-          navigator.clipboard.writeText(text.Value);
+          navigator.clipboard.writeText(box.value);
     }
     return (
           <>

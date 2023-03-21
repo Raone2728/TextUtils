@@ -1,7 +1,5 @@
 
-
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
 function Navbar(props){
     return(
          <>
@@ -32,6 +30,9 @@ function Navbar(props){
 }
 
 Navbar.propTypes={
-    title:propTypes.string,
+    title: PropTypes.string.isRequired
 }
+Navbar.defaultProps={
+    title:"add tittle"
+};
 export default Navbar;

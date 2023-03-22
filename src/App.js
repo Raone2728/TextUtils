@@ -37,10 +37,10 @@ function App() {
  <div className="container">
        <Switch>
   
-          <Route path="/about">
+          <Route exact path="/about">
             <About/>
           </Route>
-          <Route path="/">
+          <Route exact path="/">
           <Textfrom heading="Enter the Text to analyze" mode={mode}/>
           </Route>
         </Switch>
